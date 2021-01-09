@@ -1,0 +1,41 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-cov = "*"
+pytest-asyncio = "*"
+
+[packages]
+aiofiles = "*"
+fastapi-sqlalchemy = "*"
+pydantic = "*"
+alembic = "*"
+psycopg2-binary = "*"
+uvicorn = "*"
+fastapi = "*"
+pytz = "*"
+passlib = "*"
+bcrypt = "*"
+pyjwt = "*"
+cloudinary = "*"
+python-multipart = "*"
+requests = "*"
+emails = "*"
+jinja2 = "*"
+mongoengine = "*"
+babel = "*"
+python-dotenv = "*"
+redis = "*"
+slowapi = "*"
+dnspython = "*"
+sqlalchemy-utils = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+server = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+migrate = "alembic upgrade head"

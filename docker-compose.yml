@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+
+  frontend:
+      build: ./frontend
+      stdin_open: true 
+      ports:
+          - '3000:3000'
+      depends_on:
+        - "backend"
+  
+  backend:
+    build: ./backend
+    command: bash -c "pipenv run migrate && pipenv run server"
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+      - redis
+      - postgres
+  
+  mongo:
+    image: mongo
+    volumes:
+      - /data/db/mongo
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis
+    volumes:
+      - /data/db/redis
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: admin123
+      PGDATA: /data/db/postgres
