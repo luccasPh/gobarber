@@ -1,26 +1,6 @@
 version: '3.7'
 
 services:
-
-  frontend:
-      build: ./frontend
-      stdin_open: true 
-      ports:
-          - '3000:3000'
-      depends_on:
-        - "backend"
-  
-  backend:
-    build: ./backend
-    command: bash -c "pipenv run migrate && pipenv run server"
-    volumes:
-      - ./backend:/backend
-    ports:
-      - "8000:8000"
-    depends_on:
-      - mongo
-      - redis
-      - postgres
   
   mongo:
     image: mongo
@@ -42,4 +22,27 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: gobaber
       PGDATA: /data/db/postgres
+  
+  backend:
+    build: ./backend
+    command: bash -c "pipenv run migrate && pipenv run server"
+    volumes:
+      - ./backend:/backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+      - redis
+      - postgres
+  
+  frontend:
+    build: ./frontend
+    stdin_open: true 
+    ports:
+        - "3000:3000"
+    volumes:
+      - ./frontend:/frontend
+    depends_on:
+      - "backend"
