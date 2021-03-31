@@ -54,8 +54,8 @@ O projeto foi feito com as seguintes tecnologias:
 - ### **Pré-requisitos**
 
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
-  - É **necessário** possuir o **[Docker & Docker Compose](https://www.docker.com/)** instalado e configurado no computador
-  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
+  - Para o backend e frontend, é **necessário** possuir o **[Docker & Docker Compose](https://www.docker.com/)** instalado e configurado no computador
+  - Para o mobile, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
   
 - ### **Clonando o projeto**
   ```sh
