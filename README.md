@@ -53,7 +53,7 @@ O projeto foi feito com as seguintes tecnologias:
 ## :zap: Executando o Projeto
 #### Clonando o projeto
 ```sh
-$ git clone https://github.com/jvictorfarias/gobarber.git
+$ git clone https://github.com/luccasPh/gobarber.git
 $ cd gobarber
 ```
 #### Iniciando o Backend e Frontend
