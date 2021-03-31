@@ -29,9 +29,9 @@ e usuários poderão marcar agendamentos com estes provedores.
 
 ## :fire: Prévia da Aplicação
 
-<div align="center"> 
-<img src="https://media.giphy.com/media/Lm6bmg75wR7Llcf9JG/giphy.gif" alt="preview"/>
-</div>
+<p align="center"> 
+  <img src="https://media.giphy.com/media/Lm6bmg75wR7Llcf9JG/giphy.gif" alt="preview"/>
+</p>
 
 ### :rocket: Tecnologias Usadas
 
@@ -43,7 +43,7 @@ O projeto foi feito com as seguintes tecnologias:
 - [Docker](https://www.docker.com/)
 - [JWT](https://jwt.io/)
 - [ReactJS](https://pt-br.reactjs.org/)
-- [Expo](https://expo.io/)
+- [ExpressJS](https://expressjs.com/)
 {...}
 
 ## :hammer: Deploy da Aplicação
@@ -51,23 +51,31 @@ O projeto foi feito com as seguintes tecnologias:
 - [Mobile](https://expo.io/@luccasph/projects/gobarber)
 
 ## :zap: Executando o Projeto
-#### Clonando o projeto
-```sh
-$ git clone https://github.com/luccasPh/gobarber.git
-$ cd gobarber
-```
-#### Iniciando o Backend e Frontend
-```sh
-# Criando a imagem Docker do banco de dados:
-# Dentro do projeto, já existe uma arquivo docker-compose.yml que possui o
-# PostgreSQL como banco de dados, basta ter o Docker instalado em sua máquina.
-$ docker-compose up -d # Iniciará em background e não irá bloquear o shell
-```
-- [API Documentation](http://localhost:8000/docs)
-- [React app](http://localhost:3000)
+- ### **Pré-requisitos**
 
-#### Iniciando o Mobile(Android)
-```sh
-$ cd mobile
-$ yarn && yarn android && yarn start
-```
+  - É **necessário** possuir o **[Python 3.8](https://www.python.org/)** instalado no computador
+  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
+  - É **necessário** possuir o **[Docker & Docker Compose](https://www.docker.com/)** instalado e configurado no computador
+  - Também, é **preciso** ter o gerenciador de pacotes **[Pipenv](https://pipenv.pypa.io/en/latest/)** instalado na máquina.
+  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
+  - 
+- ### **Clonando o projeto**
+  ```sh
+  $ git clone https://github.com/luccasPh/gobarber.git
+  $ cd gobarber
+  ```
+- ### **Iniciando o Backend e Frontend**
+  ```sh
+  # Criando a imagem Docker do banco de dados:
+  # Dentro do projeto, já existe uma arquivo docker-compose.yml que possui o
+  # PostgreSQL como banco de dados, basta ter o Docker instalado em sua máquina.
+  $ docker-compose up -d # Iniciará em background e não irá bloquear o shell
+  ```
+  - [API Documentation](http://localhost:8000/docs)
+  - [React app](http://localhost:3000)
+
+- ### **Iniciando o Mobile(Android)**
+  ```sh
+  $ cd mobile
+  $ yarn && yarn android && yarn start
+  ```
