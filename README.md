@@ -58,7 +58,7 @@ O projeto foi feito com as seguintes tecnologias:
   - É **necessário** possuir o **[Docker & Docker Compose](https://www.docker.com/)** instalado e configurado no computador
   - Também, é **preciso** ter o gerenciador de pacotes **[Pipenv](https://pipenv.pypa.io/en/latest/)** instalado na máquina.
   - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
-  - 
+  
 - ### **Clonando o projeto**
   ```sh
   $ git clone https://github.com/luccasPh/gobarber.git
