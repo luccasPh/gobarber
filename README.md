@@ -66,9 +66,6 @@ $ docker-compose up -d # Iniciará em background e não irá bloquear o shell
 - [API Documentation](http://localhost:8000/docs)
 - [React app](http://localhost:3000)
 
-#### Iniciando o Mobile
-
-```
 #### Iniciando o Mobile(Android)
 ```sh
 $ cd mobile
