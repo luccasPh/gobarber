@@ -53,7 +53,6 @@ O projeto foi feito com as seguintes tecnologias:
 ## :zap: Executando o Projeto
 - ### **Pré-requisitos**
 
-  - É **necessário** possuir o **[Python 3.8](https://www.python.org/)** instalado no computador
   - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
   - É **necessário** possuir o **[Docker & Docker Compose](https://www.docker.com/)** instalado e configurado no computador
   - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
