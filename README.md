@@ -43,7 +43,7 @@ O projeto foi feito com as seguintes tecnologias:
 - [Docker](https://www.docker.com/)
 - [JWT](https://jwt.io/)
 - [ReactJS](https://pt-br.reactjs.org/)
-- [ExpressJS](https://expressjs.com/)
+- [Expo](https://expo.io/)
 {...}
 
 ## :hammer: Deploy da Aplicação
